@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro, Roast & Roots - Cart</title>
+
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/bg.css"/>
+  <link rel="stylesheet" href="css/navbar.css"/>
+  <link rel="stylesheet" href="css/cart.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <nav>
+      <div class="logo">Retro, Roast & Roots</div>
+      <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="store.html">Shop</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- User status bar -->
+      <div id="user-status" class="user-status">
+        <p id="user-message">Checking login...</p>
+      </div>
+      <script src="js/user-status.js"></script>
+
+      <section class="cart-hero">
+        <h1>Your Cart</h1>
+        <div id="cart-items"></div>
+        <div class="total-row">Total: <span id="cart-total">$0.00</span></div>
+      </section>
+    </main>
+  </div>
+
+  <div style="text-align:center; margin:2rem 0;">
+    <button id="checkout-btn" class="btn">Checkout</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Retro, Roast & Roots</p>
+  </footer>
+
+  <script src="js/store.js"></script>
+  <script src="js/cart.js" defer></script>
+</body>
+</html>

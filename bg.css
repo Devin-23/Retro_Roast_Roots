@@ -1,0 +1,30 @@
+body {
+    background-color: bisque;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/*took this idea from our capstone project*/
+/*This isn't working so leaving it out for now...*/
+/*
+.background-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    background-image: url('../img/RR&R-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+}
+*/
+
+.content {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro, Roast & Roots - Store</title>
+
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/bg.css"/>
+  <link rel="stylesheet" href="css/navbar.css"/>
+  <link rel="stylesheet" href="css/store.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <nav>
+      <div class="logo">Retro, Roast & Roots</div>
+      <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="store.html" class="active">Shop</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- User status bar -->
+      <div id="user-status" class="user-status">
+        <p id="user-message">Checking login...</p>
+      </div>
+      <script src="js/user-status.js"></script>
+      
+      <section class="store-hero">
+        <h1>Welcome to the Store</h1>
+        <p>Plants. Coffee. Retro Gear.<br>Your cozy aesthetic / tech hobby items all in one place</p>
+      </section>
+
+      
+      <!-- This kept breaking things... so we gave up on it
+      <section id="category-jumps" style="text-align:center; margin-bottom:1rem;"></section>
+      -->
+      <section id="store-sections"></section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Retro, Roast & Roots</p>
+  </footer>
+
+  <!-- keep your existing cart helpers first -->
+  <script src="js/store.js"></script>
+  <script src="js/store-products.js"></script>
+</body>
+</html>

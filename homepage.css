@@ -1,0 +1,32 @@
+.hero {
+    text-align: center;
+    padding: 5rem 2rem 6rem;
+}
+
+/*we're not really set on this yet but we'll see how it goes*/
+.hero-logo {
+    width: 260px;
+    max-width: 80%;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.cta-button,
+.cta-button:focus,
+.cta-button:active {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--highlight-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.cta-button:hover {
+    background-color: var(--secondary-color);
+    /*god this took so long to figure out for somthing that ended up being so simple...*/
+    transform: translateY(-2px);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}

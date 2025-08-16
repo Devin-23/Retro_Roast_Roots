@@ -1,0 +1,87 @@
+/*make life much easier this way*/
+/*found some random color pallet picker online, worked like a charm!!*/
+:root {
+    /*leafy green*/
+    --primary-color: #708a5a;
+
+    /*warm tan/brown*/
+    --secondary-color: #bfa376;
+
+    /*soft pale green*/
+    --highlight-color: rgb(150, 188, 141);
+
+    /*soft warm beige*/
+    --bg-light: rgb(245, 239, 224);
+
+    /*deep brown*/           
+    --text-color: rgb(54, 48, 38);
+
+    /*darker brown*/       
+    --hover-color: rgb(120, 92, 57);
+    
+
+    --font-stack: 'Nunito', sans-serif;
+
+    /*white...*/
+    --white: white;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-stack);
+    color: var(--text-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
+
+.user-status {
+  position: absolute;
+  top: 70px;
+  right: 2rem;
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 0.05rem 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-size: 0.95rem;
+  z-index: 998;
+}
